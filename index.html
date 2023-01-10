@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    /*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18
+     / 20 / 24 / 30 / 36 /
+      44 / 52 / 62 / 74 / 86 / 98
+    */
+
+    /*
+    Main color: #087f5b
+    Grey color: #495057
+    */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ------------------------ */
+    /* GENERAL STYLES */
+    /* ------------------------ */
+    body {
+      font-family: "Inter", sans-serif;
+      color: #495057;
+      border-bottom: 8px solid #087f5b;
+    }
+
+    .container {
+      width: 960px;
+      margin: 0 auto;
+    }
+
+    header,
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      margin-bottom: 48px;
+      font-size: 36px;
+      letter-spacing: -0.5px;
+    }
+
+    .grid-3-cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 80px;
+    }
+
+    .btn:link,
+    .btn:visited {
+      background-color: #087f5b;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+
+      display: inline-block;
+    }
+
+    .btn:hover,
+    .btn:active {
+      background-color: #099268;
+    }
+
+    .btn--big {
+      font-size: 18px;
+      padding: 16px 32px;
+    }
+
+    .btn--small {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+
+    /* ------------------------ */
+    /* COMPONENT STYLES */
+    /* ------------------------ */
+
+    /* HEADER */
+    header {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 80px;
+      margin-top: 48px;
+    }
+
+    .header-text-box {
+      align-self: center;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-size: 44px;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      /* 44 / 52 / 62 */
+    }
+
+    .header-text {
+      margin-bottom: 24px;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    /* FEATURES */
+    .features-icon {
+    }
+
+    .features-title {
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+
+    .features-text {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    /* TESTIMONIAL */
+    .testimonial-section {
+      background-color: #087f5b;
+      color: #fff;
+      padding: 24px;
+    }
+
+    .testimonial-box {
+      grid-column: 2 / -1;
+      align-self: center;
+    }
+
+    .testimonial-box h2 {
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 24px;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    /* CHAIRS */
+    .chair-box {
+      padding: 24px;
+    }
+
+    h3 {
+      margin-bottom: 24px;
+      font-size: 20px;
+    }
+
+    .chair-details {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .chair-details li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .chair-details li:last-child {
+      margin-bottom: 0;
+    }
+
+    .chair-icon {
+    }
+
+    .chair-price {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+    }
+
+    footer {
+      margin-bottom: 48px;
+      font-size: 14px;
+      color: #495057;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weblap</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-text-box">
+          <h1>Minta szöveg,</h1>
+          <p class="header-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            aspernatur obcaecati labore placeat, odit minus, molestiae iusto
+            nesciunt necessitatibus velit recusandae omnis. Temporibus,
+            cupiditate. Possimus in doloribus mollitia harum. Cupiditate!
+          </p>
+          <a class="btn btn--big" href="#">Facebook</a>
+        </div>
+        <img src="7-19-pic-favagas20alpintechnika.jpg" alt="Photo" />
+      </header>
+
+      <section>
+        <h2>Elérhető szolgáltatások</h2>
+        <div class="grid-3-cols">
+          <div>
+            <p class="features-title"><strong>Kertrendezés</strong></p>
+            <p class="features-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              similique adipisci praesentium.
+            </p>
+          </div>
+
+          <div>
+            <p class="features-title">
+              <strong>Fafeldolgozás</strong>
+            </p>
+            <p class="features-text">
+              Reprehenderit optio placeat quasi excepturi architecto, explicabo
+              facilis perspiciatis error maxime magnam.
+            </p>
+          </div>
+
+          <div>
+            <p class="features-title">
+              <strong>Ültetés</strong>
+            </p>
+            <p class="features-text">
+              Deleniti recusandae quidem nesciunt, eos dolorum iure, quaerat
+              omnis est laudantium voluptatem voluptas!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="grid-3-cols">
+          <img src="favagas.jpg" alt="People sitting on chairs" />
+          <div class="testimonial-box">
+            <h2>"Minta"</h2>
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              repellat at, nesciunt quia cum minima ipsum culpa totam sapiente
+              recusandae earum debitis doloribus in quasi voluptatibus!
+            </blockquote>
+            <p class="testimonial-author">&mdash; Mary and Sarah Johnson</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Szolgáltatások ára</h2>
+        <div class="grid-3-cols">
+          <figure class="chair">
+            <img src="beech-wood-7034179__340.jpg" alt="Chair" />
+            <div class="chair-box">
+              <h3>Fafeldolgozás</h3>
+              <ul class="chair-details">
+                <li>
+                  <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                  <span>Kis-nagy mennyiségben</span>
+                </li>
+                <li>
+                  <span>Gyors munkavégzés</span>
+                </li>
+                <li>
+                  <span>Minőségi munka</span>
+                </li>
+                <li>
+                  <span>Rövid iőn belül</span>
+                </li>
+              </ul>
+              <div class="chair-price">
+                <strong>250€/m<sup>3</sup></strong>
+                <a href="#" class="btn btn--small">Tovább</a>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="chair">
+            <img src="12_logos.jpg" alt="Chair" />
+            <div class="chair-box">
+              <h3>Kertrendezés</h3>
+              <ul class="chair-details">
+                <li>
+                  <span>2000 m<span>2</span>-ig</span>
+                </li>
+                <li>
+                  <span>Gyors munkavégzés</span>
+                </li>
+                <li>
+                  <span>Minőségi</span>
+                </li>
+                <li>
+                  <span>Rövid időn belül</span>
+                </li>
+              </ul>
+              <div class="chair-price">
+                <strong>525€/óra</strong>
+                <a href="#" class="btn btn--small">Tovább</a>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="chair">
+            <img src="image1555424757-0.jpg" alt="Chair" />
+            <div class="chair-box">
+              <h3>Ültetés</h3>
+              <ul class="chair-details">
+                <li>
+                  <span>Nagy mennyiségebn</span>
+                </li>
+                <li>
+                  <span>Gyorsan</span>
+                </li>
+                <li>
+                  <span>Megbízható</span>
+                </li>
+                <li>
+                  <span>Rövid időn belül</span>
+                </li>
+              </ul>
+              <div class="chair-price">
+                <strong>1450€</strong>
+                <a href="#" class="btn btn--small">Tovább</a>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!--<footer>
+        Copyright &copy; 2027 by Jonas Schmedtmann. Part of "Build Responsive
+        Real-World Websites with HTML and CSS" online course. Use for learning
+        purposes only.
+      </footer>-->
+    </div>
+  </body>
+</html>
